@@ -1,0 +1,25 @@
+@use "/src/vars";
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: vars.$font-color-main;
+}
+
+.navbar-button {
+  display: flex;
+  place-items: center;
+  color: vars.$font-color-main;
+  & svg {
+    width: 25px;
+    height: 25px;
+  }
+}

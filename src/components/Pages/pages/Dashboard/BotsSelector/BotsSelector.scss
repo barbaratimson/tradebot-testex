@@ -1,0 +1,51 @@
+@use "/src/vars";
+
+.bots-selector {
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
+  gap: 2px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.bot-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #252d40;
+  aspect-ratio: 1/1;
+}
+
+.bot-title {
+  font-size: 12px;
+  font-weight: 900;
+  color: vars.$font-color-accent;
+}
+
+.bot-percent {
+  font-size: 12px;
+  font-weight: 600;
+  color: vars.$font-color-accent;
+
+  &.percent-green {
+    color: #78a659;
+    &::before {
+      content: "+";
+    }
+  }
+
+  &.percent-red {
+    color: #d2447b;
+  }
+}
+
+.bot-icon {
+
+  & img {
+    width: 60px;
+    height: 60px;
+  }
+}

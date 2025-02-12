@@ -1,0 +1,80 @@
+@forward "../../page";
+@use "/src/vars";
+
+.pages-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.dashboard-header-title {
+  display: flex;
+  place-items: center;
+  color: vars.$font-color-main;
+  font-weight: 600;
+}
+
+.dashboard-balance {
+  display: flex;
+}
+
+.dashboard-balance-capital {
+  font-size: 30px;
+  color: vars.$font-color-accent;
+}
+
+.dashboard-balance-currency {
+  font-size: 30px;
+  color: vars.$font-color-accent;
+  margin-left: 10px;
+}
+
+.dashboard-balance-additional {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.balance-additional-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.balance-additional-title {
+  font-size: 14px;
+  font-weight: 800;
+  color: vars.$font-color-main;
+}
+
+.balance-additional-amount {
+  font-size: 14px;
+  font-weight: 800;
+  color: vars.$font-color-accent;
+  margin-left: auto;
+}
+
+.balance-additional-image {
+  & svg {
+    color: vars.$font-color-main;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.bots-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+}

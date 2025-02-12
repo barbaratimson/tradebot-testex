@@ -1,0 +1,32 @@
+@use "/src/vars";
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  background-color: #232c3e;
+  padding: 5px 0;
+}
+
+.footer-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 12px;
+  color: vars.$font-color-accent;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & svg {
+    width: 35px;
+    height: 35px;
+    color: vars.$font-color-main;
+  }
+}
