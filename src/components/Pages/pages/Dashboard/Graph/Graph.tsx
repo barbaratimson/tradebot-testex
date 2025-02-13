@@ -9,7 +9,6 @@ interface GraphProps {
 
 const Graph = ({data}:GraphProps) => {
     return (
-        <div className="graph">
             <ResponsiveContainer>
                 <AreaChart data={data}>
                     <defs>
@@ -24,7 +23,6 @@ const Graph = ({data}:GraphProps) => {
                           fill="url(#colorUv)"/>
                 </AreaChart>
             </ResponsiveContainer>
-        </div>
     )
 };
 

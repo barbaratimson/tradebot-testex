@@ -31,8 +31,8 @@ export const Footer = () => {
             <div className="footer-button">
                 <div className="footer-icon"><SettingsIcon/></div>
                 <div className="footer-text">Profile</div>
+                <div className="footer-icon-notification-bubble">3</div>
             </div>
-
         </div>
     );
 };
