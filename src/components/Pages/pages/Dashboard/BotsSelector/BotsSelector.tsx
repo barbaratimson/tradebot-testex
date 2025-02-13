@@ -7,7 +7,7 @@ import {BotT} from "../../../../../utils/types.ts";
 import {useAppSelector} from "../../../../../store/store.ts";
 
 interface BotsSelectorProps {
-    bots: BotT[6]
+    bots: BotT[]
 
 }
 

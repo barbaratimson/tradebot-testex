@@ -1,14 +1,10 @@
-import listIcon from "../../assets/list.svg"
-import chartIcon from "../../assets/svg/chart.svg"
-import cartIcon from "../../assets/svg/cart.svg"
-import dollarIcon from "../../assets/dollar.svg"
-import settingsIcon from "../../assets/settings.svg"
 import "./Footer.scss"
 import {ListIcon} from "../../assets/svg/ListIcon.tsx";
 import {CardIcon} from "../../assets/svg/CardIcon.tsx";
 import {DollarIcon} from "../../assets/svg/DollarIcon.tsx";
 import {SettingsIcon} from "../../assets/svg/SettingsIcon.tsx";
 import {ChartIcon} from "../../assets/svg/ChartIcon.tsx";
+
 export const Footer = () => {
     return (
         <div className="footer">

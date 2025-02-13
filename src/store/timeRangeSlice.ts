@@ -1,5 +1,6 @@
-import {createSlice, current, PayloadAction} from "@reduxjs/toolkit"
+import {createSlice, PayloadAction} from "@reduxjs/toolkit"
 
+//@ts-ignore
 const savedTimeRange:timeRange = JSON.parse(localStorage.getItem("time_range"))
 
 export type timeRange = "24h" | "7d" | "30d" | "60d" | "90d" | "all_time"
