@@ -1,5 +1,4 @@
 export const ReloadIcon = () => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><path strokeMiterlimit="10" d="M18.024 7.043A8.374 8.374 0 0 0 3.74 12.955"/><path strokeLinejoin="round" d="m17.35 2.75l.832 3.372a1.123 1.123 0 0 1-.854 1.382l-3.372.843"/><path strokeMiterlimit="10" d="M5.976 16.957a8.374 8.374 0 0 0 14.285-5.912"/><path strokeLinejoin="round" d="m6.65 21.25l-.832-3.372a1.124 1.124 0 0 1 .855-1.382l3.371-.843"/></g></svg>
-    );
+        <svg xmlns="http://www.w3.org/2000/svg" width="undefined" height="undefined" viewBox="0 0 21 21"><g fill="none" fillRule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 6.5c1.378-2.412 4.024-4 7-4a8 8 0 0 1 8 8m-1 4c-1.408 2.287-4.118 4-7 4a8 8 0 0 1-8-8"/><path d="M8.5 6.5h-5v-5m9 13h5v5"/></g></svg>    );
 };

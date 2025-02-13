@@ -1,12 +1,12 @@
 @use "/src/vars";
 
 .bots-selector {
+  position: relative;
   display: grid;
   grid-template-rows: repeat(2,1fr);
   grid-template-columns: repeat(3,1fr);
-  gap: 2px;
+  gap: 1px;
   border-radius: 8px;
-  overflow: hidden;
 }
 
 .bot-button {
@@ -14,21 +14,47 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  background-color: #252d40;
-  aspect-ratio: 1/1;
+  background-color: vars.$background-color-accent;
+  padding: 20px;
+  border-radius: 8px;
+  width: 160px;
+  @media screen and (max-width: 480px) {
+    padding: 10px;
+    width: 120px;
+  }
 }
 
 .bot-title {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 900;
   color: vars.$font-color-accent;
+  line-height: 1;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+
+  &.bot-empty {
+    font-size: 13px;
+    text-align: center;
+    display: flex;
+    color : vars.$font-color-main;
+
+    @media screen and (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
 }
 
 .bot-percent {
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 600;
   color: vars.$font-color-accent;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
 
   &.percent-green {
     color: #78a659;
@@ -43,9 +69,43 @@
 }
 
 .bot-icon {
-
   & img {
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
+  }
+}
+
+.arrow-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  @media screen and (max-width: 480px) {
+    scale: 0.5 !important;
+  }
+
+  &#arrow1 {
+    transform: translate(112px, 7px);
+    scale: 0.7;
+  }
+
+  &#arrow2 {
+    transform: translate(119px, 119px);
+    scale: 0.7;
+  }
+
+  &#arrow3 {
+    transform: translate(-118px, 5px);
+    scale: 0.7;
+  }
+
+  &#arrow4 {
+    transform: translate(-121px, 119px);
+    scale: 0.7;
   }
 }

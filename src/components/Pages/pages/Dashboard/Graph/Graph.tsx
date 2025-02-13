@@ -19,7 +19,7 @@ const Graph = ({data}:GraphProps) => {
                     </defs>
                     <CartesianGrid style={{opacity: "0.05"}}/>
                     <Tooltip contentStyle={{display: "none"}}/>
-                    <Area type="monotone" dataKey="y" stroke="#2179d7" strokeWidth="2px" fillOpacity={1}
+                    <Area type="monotone"  dataKey="y" stroke="#2179d7" strokeWidth="2px" fillOpacity={1}
                           fill="url(#colorUv)"/>
                 </AreaChart>
             </ResponsiveContainer>

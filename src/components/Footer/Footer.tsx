@@ -12,8 +12,8 @@ import {ChartIcon} from "../../assets/svg/ChartIcon.tsx";
 export const Footer = () => {
     return (
         <div className="footer">
-            <div className="footer-button">
-                <div className="footer-icon"><ListIcon/></div>
+            <div className="footer-button selected">
+                <div className="footer-icon" id="list"><ListIcon/></div>
                 <div className="footer-text">Dashboard</div>
             </div>
             <div className="footer-button">
@@ -29,7 +29,7 @@ export const Footer = () => {
                 <div className="footer-text">Coin prices</div>
             </div>
             <div className="footer-button">
-                <div className="footer-icon"><SettingsIcon/></div>
+                <div className="footer-icon" id="settings"><SettingsIcon/></div>
                 <div className="footer-text">Profile</div>
                 <div className="footer-icon-notification-bubble">3</div>
             </div>
